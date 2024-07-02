@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <center>
+      <div class="headingContainer">
+        <div class="heading">
+          <h1>JavaScript Calculator</h1>
+        </div>
+      </div>
+      <hr color="black" size="2" />
+      <div id="calculator">
+        <input type="text" id="ans" placeholder="0" />
+        <div id="row1">
+          <button onclick="display('7')">7</button>
+          <button onclick="display('8')">8</button>
+          <button onclick="display('9')">9</button>
+          <button onclick="display('+')">+</button>
+        </div>
+        <div id="row2">
+          <button onclick="display('4')">4</button>
+          <button onclick="display('5')">5</button>
+          <button onclick="display('6')">6</button>
+          <button onclick="display('-')">-</button>
+        </div>
+        <div id="row3">
+          <button onclick="display('1')">1</button>
+          <button onclick="display('2')">2</button>
+          <button onclick="display('3')">3</button>
+          <button onclick="display('*')">x</button>
+        </div>
+        <div id="row4">
+          <button onclick="display('0')">0</button>
+          <button onclick="display('%')">%</button>
+          <button onclick="display('.')">.</button>
+          <button onclick="display('/')">/</button>
+        </div>
+        <div id="row5">
+          <button class="C" onclick="clearDisplay()">C</button>
+          <button class="equal" onclick="calculate()">=</button>
+        </div>
+      </div>
+    </center>
+    <hr color="black" size="2" />
+    <script>
+      function calculate() {
+        try {
+          const result = eval(document.getElementById("ans").value);
+          document.getElementById("ans").value = result;
+        } catch (error) {
+          alert("Invalid Input");
+          clearDisplay();
+        }
+      }
+      function display(value) {
+        document.getElementById("ans").value += value;
+      }
+      function clearDisplay() {
+        document.getElementById("ans").value = "";
+      }
+    </script>
+  </body>
+</html>

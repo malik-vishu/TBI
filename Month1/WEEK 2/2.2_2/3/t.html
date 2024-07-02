@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intersection Observer Example</title>
+    <style>
+      .skillsSection {
+        height: 100vh;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .skillBar {
+        width: 100px;
+        height: 20px;
+        background-color: #3498db;
+        margin: 10px;
+        animation: none; /* Initially no animation */
+      }
+      @keyframes bar {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="skillsSection">
+      <div class="skillBar"></div>
+      <div class="skillBar"></div>
+      <div class="skillBar"></div>
+    </div>
+    <div style="height: 2000px"></div>
+
+    <script>
+      // Get the skillsSection and skillBars
+      const skillsSection = document.querySelector(".skillsSection");
+      const skillBars = document.querySelectorAll(".skillBar");
+
+      // Create an intersection observer for the skillsSection
+      const observer = new IntersectionObserver((entries) => {
+        // If the skillsSection is in the viewport, add the animation to the skillBars
+        if (entries[0].isIntersecting) {
+          skillBars.forEach((skillBar) => {
+            skillBar.style.animation = "bar 4.5s ease-in-out";
+          });
+        }
+      });
+
+      // Start observing the skillsSection
+      observer.observe(skillsSection);
+    </script>
+  </body>
+</html>

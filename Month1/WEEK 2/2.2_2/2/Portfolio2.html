@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vishwas Malik's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="Portfolio2_CSS.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="left"><a href="Portfolio2.html">Portfolio</a></div>
+        <div class="right">
+          <ul>
+            <li><a href="#homeSection">Home</a></li>
+            <li><a href="#skillsSection">Skills</a></li>
+            <li><a href="#projectsSection">Projects</a></li>
+            <li><a href="#resumeSection">Resume</a></li>
+            <li><a href="#contactSection">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="homeSection" id="homeSection">
+        <div id="profilePic">
+          <img src="assets/Mini1.png" alt="Profile Picture" />
+        </div>
+        <div id="homeText">
+          Hi, I am a Web, Flutter, and TensorFlow Developer
+        </div>
+      </section>
+      <hr />
+      <section class="skillsSection" id="skillsSection">
+        <h2>Skills</h2>
+        <p>
+          I have experience in the following programming languages and
+          technologies.
+        </p>
+        <div class="skillContainer">
+          <div class="skillBar" style="width: 85%; background-color: black">
+            C
+          </div>
+          <div class="skillBar" style="width: 90%; background-color: black">
+            C++
+          </div>
+          <div class="skillBar" style="width: 80%; background-color: black">
+            Python
+          </div>
+          <div class="skillBar" style="width: 55%; background-color: black">
+            Java
+          </div>
+          <div class="skillBar" style="width: 85%; background-color: black">
+            HTML
+          </div>
+          <div class="skillBar" style="width: 85%; background-color: black">
+            CSS
+          </div>
+          <div class="skillBar" style="width: 65%; background-color: black">
+            JS
+          </div>
+          <div class="skillBar" style="width: 90%; background-color: black">
+            Flutter
+          </div>
+          <div class="skillBar" style="width: 90%; background-color: black">
+            TensorFlow
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section class="projectsSection" id="projectsSection">
+        <h2 id="topic">Projects</h2>
+        <div class="projectContainer">
+          <div class="projectCard">
+            <img id="prime" src="assets/nlp.png" alt="Project 1" />
+            <div class="content">
+              <h3>Natural Language Processing - Text Generation</h3>
+              <p>
+                <i>Mentor - Mr. Kireet Joshi, Assistant Professor</i><br />
+                Text generation for songs. Tkinter is used for the user
+                interface.
+              </p>
+              <a class="disabled" href="#">View Project</a>
+            </div>
+          </div>
+
+          <div class="projectCard">
+            <img src="assets/G3.png" alt="Project 2" />
+            <div class="content">
+              <div class="contentText">
+                <h3>Grocery Application User Interface Mockup</h3>
+                <p>Flutter framework is used for this user interface.<br /></p>
+              </div>
+              <div class="contentLink">
+                <a href="https://github.com/malik-vishu/GroceryApp_Flutter"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="projectCard">
+            <img src="assets/n1.png" alt="Project 3" />
+            <div class="content">
+              <div class="contentText">
+                <h3>Notes Application</h3>
+                <p>
+                  It stores notes locally on the device using Isar database.
+                  Flutter framework is used in this project.<br />
+                </p>
+              </div>
+              <div class="contentLink">
+                <a href="https://github.com/malik-vishu/Notes-App-Flutter"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="projectCard">
+            <img id="prime" src="assets/p1.png" alt="Project 4" />
+            <div class="content">
+              <h3>Prime Video User Interface Clone</h3>
+              <p>
+                Flutter framework is used to make a responsive home page user
+                interface of Prime Video. Packages used - banner_carousel and
+                video_player.<br />
+              </p>
+              <a
+                href="https://github.com/malik-vishu/PrimeVideo_HomePage_UI_Flutter"
+                >View Project</a
+              >
+            </div>
+          </div>
+          <div class="projectCard">
+            <div class="content">
+              <h3>Health Notifier</h3>
+              <p>
+                24-hour 'Hack-O-Holic 2.0' Hackathon, organized by the Co-Dev
+                Club at Graphic Era Hill University.We made a website that used
+                the power of multiple machine-learning models to predict Heart
+                Problem, Diabetes, Sleep Disorders, COVID-19, and Parkinson's
+                disease using Streamlit.
+              </p>
+              <a class="disabled" href="#">View Project</a>
+            </div>
+          </div>
+          <div class="projectCard">
+            <div class="content">
+              <h3>Waste Classification Using Machine Learning</h3>
+              <p>
+                <i>Mentor - Dr. Guru Prasad M S, Professor </i><br />
+                Developed multiple deep learning models using Convolutional
+                Neural Networks(CNNs) in TensorFlow. Training accuracy 97.06%
+                and Validation accuracy- 84.46%.
+              </p>
+              <a class="disabled" href="#">View Project</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section class="resumeSection" id="resumeSection">
+        <h2>Resume</h2>
+        <object
+          data="assets/Resume.pdf"
+          type="application/pdf"
+          width="100%"
+          height="500px"
+        >
+          <p>
+            Unable to display PDF file.
+            <a href="assets/Resume.pdf">Download</a> instead.
+          </p>
+        </object>
+      </section>
+      <hr />
+      <section class="contactSection" id="contactSection">
+        <h2>Connect with me</h2>
+        <div class="socialMediaLinks">
+          <a
+            class="linkedin"
+            href="https://www.linkedin.com/in/vishwas-malik/"
+            target="_blank"
+          ></a>
+          <a
+            class="github"
+            href="https://github.com/malik-vishu"
+            target="_blank"
+          ></a>
+          <a
+            class="leetcode"
+            href="https://leetcode.com/swish30/"
+            target="_blank"
+          ></a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
